@@ -31,6 +31,7 @@
 				invertPageOrder: false,
 				useStartEdge : true,
 				useEndEdge : true,
+                ulClass: "",
 				onPageClick: function(pageNumber, event) {
 					// Callback triggered when a page is clicked
 					// Page number is given as an optional parameter
@@ -161,7 +162,7 @@
 			
 			tagName = (typeof this.prop === 'function') ? this.prop('tagName') : this.attr('tagName');
 
-			var $panel = tagName === 'UL' ? this : $('<ul></ul>').appendTo(this);
+			var $panel = tagName === 'UL' ? this : $('<ul class="'+o.ulClass+'"></ul>').appendTo(this);
 
 			// Generate Prev link
 			if (o.prevText) {

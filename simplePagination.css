@@ -185,3 +185,18 @@ ul.simple-pagination {
 	font-weight: bold;
 	cursor: default;
 }
+
+
+/*------------------------------------*\
+	bootstrap Theme Styles
+\*------------------------------------*/
+
+.bootstrap .current.prev{
+    border-right: 2px solid #DDD;
+}
+
+.bootstrap .current.next{
+    border-left: 1px solid #DDD;
+}
+
+
